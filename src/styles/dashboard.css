@@ -1,0 +1,85 @@
+.sidebar {
+  width: 100%;
+  background: linear-gradient(to right, #84030b, #f94646);
+  color: white;
+  padding: 20px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.sidebar-nav {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: border-bottom 0.3s;
+  padding: 5px;
+}
+
+.sidebar-nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+.sidebar-nav a.active {
+  border-bottom: 2px solid white;
+}
+
+.icon {
+  margin-right: 6px;
+}
+.dashboard {
+  padding: 2rem;
+  color: var(--text-color);
+}
+
+.dashboard h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: var(--card-bg);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 200px;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.stat-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
